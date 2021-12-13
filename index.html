@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color | JavaScript</title>
+</head>
+
+    <!-- CSS -->
+<style>
+    body {
+        background: #abbaab;
+        background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+        background: linear-gradient(to right, #ffffff, #abbaab);
+        font-family: sans-serif;
+        cursor: default;
+    }
+
+    .parent {
+        height: 500px;
+        width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(141, 88, 255, 0.795);
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    button {
+        height: 45px;
+        width: 90px;
+        font-size: medium;
+        background-color: rgba(143, 18, 18, 0.788);
+        color: whitesmoke;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .child {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid black;
+        margin-top: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .childDiv img {
+        height: 300px;
+        width: 300px;
+        border-radius: 0 0 10px 10px;
+    }
+</style>
+
+<body>
+    <div class="parent" id="parent">
+        <h1>CHANGE BACKGROUND COLOR</h1>
+        <p>Click the button to change the background color of profile.</p>
+        <button onclick="changeColor()">Click Me</button>
+        <div class="child" id="child">
+            <div class="childDiv">
+                <img id="img" src="./image/image.png" alt="user profile">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
